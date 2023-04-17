@@ -1,0 +1,91 @@
+html {
+    height: 90%;
+}
+body{
+    background: radial-gradient(#48096d, #8f0962);
+    height: 100%;
+}
+
+.menu{
+    border: rgb(212, 188, 188) solid 3px;
+    background-color: #48096d;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+.menu-items{
+    height: 100%;
+    width: 100%
+}
+#pause, #fill,#done{
+    margin-top: 15%;
+    height: 70%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+    font-size: xx-large;
+
+}
+.gameBoard{
+height: 70%;
+margin-left: 20%;
+margin-right: 20%;
+border: rgb(212, 188, 188) solid 3px;
+background-image: radial-gradient(rgb(86, 0, 121),rgb(234, 180, 241));
+border-radius: 30px;
+width: 60%;
+
+}
+.cells {
+    height: 100%;
+}
+
+.rows{
+    height: 20%;
+}
+.boxes {
+    width: 20%;
+    border-radius: 20px;
+
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input:hover,#pause:hover,#fill:hover, #done:hover {
+    background-color: rgb(252, 75, 6);
+    cursor: pointer;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
