@@ -1,0 +1,24 @@
+
+
+
+.main_container{
+    
+    align-self: center;
+    height: 90vh;
+}
+
+
+table {
+    border-collapse: collapse;
+    
+  }
+  
+  td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+  }  
+  
