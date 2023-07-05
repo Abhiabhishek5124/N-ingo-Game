@@ -1,0 +1,48 @@
+
+{
+    "id":{
+        "$oid":"123456789"
+    },
+     "game":{
+        "gameId":"1234",
+        "numbers": [],
+        "users" : [
+            {   
+                "username" : "Manogya",
+                "playerState" : [   
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0]
+                    ],
+                    "gameWin" : false,
+                    "bingocount" : 0
+            }, 
+            {   
+                "username" : "Bikash",
+                "playerState" : [   
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0]
+                    ],
+                    "gameWin" : false ,
+                    "bingocount" : 0
+            },
+            {   
+                "username" : "Abhishek",
+                "playerState" : [   
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0],
+                    [0,0,0,0,0]
+                    ],
+                    "gameWin" : false ,
+                    "bingocount" : 0 
+            }
+        ]
+    }
+} 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      body{
+        background-color: thistle;
+      }
+        .sectionsHeading{
+          font-weight: 400%;
+          font-size: 250%;
+          font-family: 'Roboto';
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          color:rgb(13,110,253);
+        }
+
+        .contact {
+            margin-top: 60px;
+        }
+        .contacts{
+            margin-top: 5px;
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: auto;
+            gap: 50px;
+        }
+        .contacts-items{
+            margin-top: 50px;
+            height: 200px;
+            width: 300px;
+        }
+        .contacts-items-icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .contacts-items-text {
+            display: flex;  
+            justify-content: center;
+            align-items: center ;
+            flex-direction: column;
+            padding-top: 10px;
+        }
+        .form-content{
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 650px ;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+
+        form{
+            height: 500px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .sendMessage {
+            padding-bottom: 50px;
+        }
+        #sendMessage {
+            color: rgb(70, 64, 64);
+            font-size:30px;
+            margin-top: 30px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+        .form-control {
+            padding-left: 50px;
+            height: 50px;
+        }
+
+        #form-message {
+            height: 230px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid contact" id="contact" >
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 aboutMe text-center mt-4">
+                <p class="sectionsHeading">Contact Us</p>
+              </div>
+              <div class="contacts">
+                <div class="contacts-items">
+                  <div class="bg-light contacts-items-icons shadow-lg bg-white rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="55" fill="#711997" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <div class="contacts-items-text">
+                      <p class="address">Location</p>
+                      <p class="text-dark">Highland Heights,KY</p>
+                    </div>
+                  
+                  </div>
+                </div>
+                
+              <div class="contacts-items">
+                <div class="bg-light contacts-items-icons shadow-lg  bg-white rounded">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="55" fill="#711997" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  <div class="contacts-items-text">
+                    <p class="emailAddress">Email Address</p>
+                    <a class="text-primary" href="mailto:nepalibingo@gmail.com">nepalibingo@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+        
+            </div>
+          </div>
+          <div class="container form-content shadow-lg bg-white rounded">
+            <form action="post" class="col-12 form-content-items mx-auto">
+              <div class="sendMessage aboutMe">
+                <p id="sendMessage">Send Message</p>
+              </div>
+              <div class= "form-group">
+                <input type="text" class="form-control" id="form-name" placeholder="Your Name">
+                <input type="email" class="form-control" id ="form-email" placeholder="Your email" required>
+                <input type="text" class = "form-control" placeholder="Message" name="" id="form-message">
+                <button type="button" class="btn btn-primary btn-lg btn-block"><a href = "/Users/manogyaaryal/Desktop/FinalProject-1/public/Main/Home.html>">Submit </button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

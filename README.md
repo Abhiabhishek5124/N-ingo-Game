@@ -4,20 +4,40 @@ Manogya Aryal
 Abhishek Shrestha
 Gaurav Upreti
 ASE 220 
-Midterm document 
 Professor Caprusso 
 
 
+BINGO Game is a classic multiplayer game that brings the excitement of the traditional BINGO experience to the digital realm. It allows multiple players to participate simultaneously, competing to mark off numbers on their game cards and achieve the winning pattern before anyone else. This is a simple version of the BINGO game implemented as a full stack application using JavaScript, JSON, and MongoDB.
+Features
+User Registration: Users can register for an account using their email and password.
+User Login: Registered users can log in to their account.
+Game Creation: Logged-in users can create new BINGO games by specifying game details such as name, description
+Game Participation: Users can join existing BINGO games created by other players.
+Game Play: The application generates random numbers from 1 to 25 and places them on each players BINGO Board and marks them on the game boards of the participating players.
+Winning Condition: The application checks for winning patterns on the game boards and declares the winners.
+Leaderboard: The application keeps track of the scores and displays a leaderboard showing the top players.
+
+Technologies Used
+Front-end: HTML, CSS, JavaScript
+Back-end: Node.js, Express.js
+Database: MongoDB
+External Libraries: Express.js, Bcrypt, JSON Web Tokens (JWT)
+Setup and Configuration
+Clone the repository to your local machine.
+Install Node.js and MongoDB if you haven't already.
+Navigate to the project directory using a command line interface.
+Start the application by running the command: node app
+Access the application in your web browser at http://localhost:3000 and follow the instructions
+Project Structure
+//This part describes the structure of our project. Example is shown below: 
+
+Notes
+This is a simplified version of the BINGO game, and it can be extended and enhanced based on your requirements.
+The application uses JSON Web Tokens (JWT)and bcrypt libraries for user authentication and authorization.
+Make sure to secure your MongoDB connection details and consider using environment variables to store sensitive information.
+Feel free to reach out if you have any questions or need further assistance. Enjoy playing BINGO!
 
 
-Q. Identify the purpose of your Content Management System and write a one-page document where you describe:
-What is it?
-How does it work?
-for what kind of entities will you need to implement the index/detail/create/edit/delete actions?  
 
 
-Our CMS model, named "Bingo", is a web-based game that features four navigation bars to aid users in navigating the game. The Home page allows users to click on the "Play Now" button to begin playing. The Game Rules page provides detailed instructions and winning conditions for the game. The About page introduces the creators of the game and page. Lastly, the Contact page enables users to report any issues they may encounter while playing the game by filling out and submitting a form.
-
-In addition to the four navigation bars, our CMS model consists of three entities within the game itself. The first entity is the Pause button, which allows users to temporarily halt the game in the event of any unexpected situations that may arise while playing. The second entity is the Fill button, which is clicked before starting the game to randomly fill the user's e-bingo card. The third entity is the Done button, which makes the filled numbers not editable. Our aim to to continuously check for Bingo each time a number is said by a player.
-These entities serve to enhance the user's experience by providing additional functionality and convenience during gameplay.
 

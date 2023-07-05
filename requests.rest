@@ -1,0 +1,31 @@
+### GET REQUEST
+GET http://localhost:3000/game
+
+
+### POST REQUEST
+POST http://localhost:3000/api/auth/signup
+content-type: application/json
+
+
+{
+    "firstname":"test",
+    "lastname": "redirect testt",
+    "age": 32,
+    "email":"rediresadct12@test.com",
+    "password":"123asd",
+    "phone":7895864572
+
+}
+
+  
+### PUT REQUEST
+PUT http://localhost:3000/api/games/1234
+content-type: application/json
+
+
+{
+    "bingoNumber":24
+}
+
+### DELETE REQUEST
+DELETE http://localhost:8000/assignmentSixds/apiRequests/644584527726e807c87376bd

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-image: url('images/First_Pic.jpg');
+            background-size:contain;
+            height: 450px;
+           
+        }
+        .welcome{
+            background-color: bisque;
+            padding: 50px;
+        }
+        .content {
+            padding: 50px;
+        }
+        .GameRules{
+            background-color:blanchedalmond;
+            padding: 50px;
+        }
+        .contact {
+            padding: 50px;
+        }
+        .Info{
+            background-color: burlywood;
+            padding: 50px;
+        }
+        body{
+            background-color:floralwhite;
+        }
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .container1 img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+        </div>
+    </div>
+
+    <div class = "welcome bg-dark">
+        <div class="container text-info">
+            <h1 class="display-3">Welcome to the Bingo Game Website</h1>
+            <p class="lead">This is the homepage for a bingo game created by students of ASE 220 class for their final project.</p>
+            <a class="btn btn-primary btn-lg" href="FrontEnd/html/login.html" role="button"> Login </a>
+            <a class="btn btn-primary btn-lg" href="FrontEnd/html/signup.html" role="button"> Sign Up</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="container">
+            <h2 id="about"> About us</h2>
+            <p>We are students studying computer science at NKU. This website is a project for our class Full Stack Application development. We did it under professor
+                Nicholas Caprusso. Explore this page to learn about the game we created and have fun playing it.</p>
+                <div class="container1">
+                        <img src="images/Bikash.JPG">
+                        <img src="images/Abhishek.jpeg">
+                        <img src= "images/IMG_4407.JPG">
+                        <img src= "images/Gaurab.jpeg">
+                      </div>
+                    </div>
+                </div>
+        </div>
+     </div>
+     
+    <div class = "GameRules">
+        <div class = "container">
+            <h2 id="features">How to play the Game?</h2>
+            <ul>
+                <li>Choose how many cards you want to play with.</li>
+                <li>Click the "Generate Card" button to create your card(s).</li>
+                <li>The game will begin and the caller will start calling out numbers.</li>
+                <li>Mark the numbers on your card as they are called out.</li>
+                <li>The first player to mark all the numbers on their card(s) yells out "Bingo!" to win the game.</li>
+            </ul>
+        </div>
+    </div> 
+
+    <div class="contact">
+        <div class="container">
+            <h2 id="contact">Contact the makers</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+            <div class = "Info">
+                <div class = "container">
+                    <h2>Contact Information</h2>
+            <p>For any inquiries or questions regarding our services, please use the contact form above or reach out to us directly:</p>
+            <ul>
+                <li><strong>Phone:</strong> 859-786-0000</li>
+                <li><strong>Email:</strong> nepalibingo@gmail.com</li>
+                <li><strong>Address:</strong>  10 Campbell Drive, Highland Heights, KY</li>
+            </ul>
+                </div>
+            </div>
+            
+        
+    <footer class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Bingo Game. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"></script>
+        <script>
+        
+                    const form = document.querySelector('form');
+
+                    form.addEventListener('submit', (event) => {
+                        event.preventDefault();
+                    
+                        const name = document.querySelector('#name').value;
+                        const email = document.querySelector('#email').value;
+                        const message = document.querySelector('#message').value;
+                    
+                        axios.post('/api/contact', {
+                        name: name,
+                        email: email,
+                        message: message
+                        })
+                        .then(response => {
+                        
+                        alert(response.data);
+                        })
+                        .catch(error => {
+                        
+                        alert(error.response.data);
+                        });
+                    });
+            </script>
+</body>
+
+
+
+
+
+</html>
+
